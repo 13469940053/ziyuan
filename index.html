@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拓新教育上课视频</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="css/layui.css" type="text/css" rel="stylesheet"></head>
+<body>
+	<center style="padding-top: 40px">
+		<a style="font-size:50px;font-weight: 500">
+			拓新教育上课视频
+			<span class="layui-badge layui-bg-blue">软件</span>
+			<span class="layui-badge layui-bg-yellow">资料</span>
+			<span class="layui-badge layui-bg-black">视频</span>
+			<span class="layui-badge layui-bg-red">源码</span>
+		</a>
+		<br>
+		<div style="width: 80%;padding-top: 20px">
+			<blockquote class="layui-elem-quote">#素材整理者--------张成</blockquote>
+			<!--以下为两个必须div元素-->
+			<div id="table"></div>
+			<div id="pageBar"></div>
+		</div>
+
+	</center>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/layui.js"></script>
+	<script type="text/javascript" src="js/nicePage.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript">
+	var nameList = ['序号', '课程名称', '教师', '提取码', '网盘地址', '类型','时间'] //table的列名
+	var widthList = [50,300,100,100,400,100,200] //table每列的宽度
+	//初始化
+	$(function () {
+		nicePage.setCfg({
+			table: 'table',
+			bar: 'pageBar',
+			limit: 20,
+			color: '#1E9FFF',
+			layout: ['count', 'prev', 'page', 'next',  'skip']
+		});
+	});
+</script>
+
+</body>
+</html>
